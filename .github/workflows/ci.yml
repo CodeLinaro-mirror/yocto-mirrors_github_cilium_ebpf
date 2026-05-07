@@ -43,11 +43,10 @@ jobs:
 
       - name: Run staticcheck
         run: |
-          make lint-staticcheck
+          go tool staticcheck  ./...
 
       - name: Run golangci-lint
-        run: |
-          make lint-golangci
+        uses: golangci/golangci-lint-action@v9.2.0
 
       - name: Generate and format code
         run: |

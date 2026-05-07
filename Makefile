@@ -78,7 +78,7 @@ TARGETS := \
 
 HEADERS := $(wildcard testdata/*.h)
 
-.PHONY: all clean container-all container-shell generate format lint-golangci lint-staticcheck
+.PHONY: all clean container-all container-shell generate format
 
 .DEFAULT_TARGET = container-all
 
@@ -100,12 +100,6 @@ clean:
 
 format:
 	find . -type f -name "*.c" | xargs clang-format -i
-
-lint-golangci:
-	go tool golangci-lint run
-
-lint-staticcheck:
-	go tool staticcheck -tests  ./...
 
 all: format testdata update-external-deps
 	ln -srf testdata/loader-$(CLANG)-el.elf testdata/loader-el.elf
