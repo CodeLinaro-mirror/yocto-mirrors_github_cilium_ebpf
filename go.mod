@@ -36,12 +36,11 @@ require (
 	github.com/stretchr/testify v1.11.1 // indirect
 	github.com/vbatts/tar-split v0.12.1 // indirect
 	golang.org/x/exp/typeparams v0.0.0-20260209203927-2842357ff358 // indirect
-	golang.org/x/mod v0.30.0 // indirect
-	golang.org/x/net v0.46.0 // indirect
-	golang.org/x/tools v0.38.0 // indirect
-	golang.org/x/tools/go/expect v0.1.1-deprecated // indirect
+	golang.org/x/mod v0.31.0 // indirect
+	golang.org/x/net v0.48.0 // indirect
+	golang.org/x/tools v0.40.1-0.20260108161641-ca281cf95054 // indirect
 	gotest.tools/v3 v3.5.0 // indirect
-	honnef.co/go/tools v0.7.0-0.dev // indirect
+	honnef.co/go/tools v0.7.0 // indirect
 )
 
 tool (
